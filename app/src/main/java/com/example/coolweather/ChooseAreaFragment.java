@@ -138,7 +138,7 @@ public class ChooseAreaFragment extends Fragment {
         }else {
             String address = "http://guolin.tech/api/china";
             queryFromSever(address, "province");
-        }   
+        }
     }
 
     /**
@@ -173,7 +173,7 @@ public class ChooseAreaFragment extends Fragment {
         if (countyList.size() > 0){
             dataList.clear();
             for (County county : countyList){
-                dataList.add(county.getCountName());
+                dataList.add(county.getCountyName());
             }
             adapter.notifyDataSetChanged();
             listView.setSelection(0);
